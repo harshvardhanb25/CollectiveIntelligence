@@ -13,7 +13,7 @@ def euclid(critics:dict, critic1:str, critic2:str, movie1:str, movie2:str):
         s2c2=critics[critic2][movie2]
         dist = sqrt((s1c1 - s2c1)**2 + (s1c2 - s2c2)**2)
         score = 1/(dist+1);
-        return dist
+        return score
     except KeyError:
         print("Invalid Critic-Movie combination")
         exit(1)
